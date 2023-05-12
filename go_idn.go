@@ -108,4 +108,22 @@ func main() {
 	//mat function
 	pl("Math Abs : ",  math.Abs(-10))
 	pl("Math Pow : ", math.Pow(2,3))
+	r90 := 90 * math.Pi / 180 // derajat
+	pl("Sin (90) : ", math.Sin(r90))
+	
+	//printf
+	/*
+		%d = integer
+		%c = character
+		%f = float
+		%t = boolean
+		%s = string
+		%o = base 8
+		%x = base 16
+	*/
+	fmt.Printf("%9f\n", 3.14)
+	fmt.Printf("%.2f\n", 3.14232)
+	fmt.Printf("%9.f\n", 3.14232) //menghapus semua desimal
+	sp1 := fmt.Sprintf("%9.f", 3.14232)
+	pl(sp1)
 }
