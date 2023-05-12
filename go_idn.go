@@ -2,6 +2,9 @@ package main
 
 import (
 	"fmt"
+	"math"
+	"math/rand"
+	"time"
 )
 
 var pl = fmt.Println
@@ -77,5 +80,32 @@ func main() {
 	// pl("Apakah punya prefix : ", strings.HasPrefix("School", "Sc"))
 	// pl("Apakah punya prefix : ", strings.HasSuffix("School", "ol"))
 
-	
+	// //character = rune------------------------
+	// rStr := "abcdefg"
+	// pl("Jumlah Rune : ", utf8.RuneCountInString(rStr))
+	// for i, runeVal := range rStr {
+	// 	fmt.Printf("%d : %#U : %c\n",i,runeVal,runeVal)
+	// }
+
+	// //time------------------------
+	// now := time.Now()
+	// pl(now.Year(), now.Month(), now.Day())
+	// pl(now.Hour(), now.Minute(), now.Second())
+
+	//math------------------------
+	pl("5 + 4 = ", 5+4)
+	pl("5 % 2 = ", 5%2)
+	x := 2
+	x++
+	pl(x)
+
+	// random number
+	seedSecs := time.Now().Unix()
+	rand.Seed(seedSecs)
+	randNum := rand.Intn(50) + 1 //random number from 1-49 + 1
+	pl(randNum)
+
+	//mat function
+	pl("Math Abs : ",  math.Abs(-10))
+	pl("Math Pow : ", math.Pow(2,3))
 }
