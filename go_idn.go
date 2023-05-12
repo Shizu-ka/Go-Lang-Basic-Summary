@@ -1,14 +1,7 @@
 package main
 
 import (
-	"bufio"
 	"fmt"
-	"log"
-	"math/rand"
-	"os"
-	"strconv"
-	"strings"
-	"time"
 )
 
 var pl = fmt.Println
@@ -170,5 +163,8 @@ func main() {
 	// }
 	// }
 	
-	arr := []
+	arr := []int{1,2,3}
+	for _, num := range arr {
+		pl(num)
+	}
 }
