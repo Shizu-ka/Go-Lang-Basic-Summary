@@ -1,9 +1,13 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
-	"math"
+	"log"
 	"math/rand"
+	"os"
+	"strconv"
+	"strings"
 	"time"
 )
 
@@ -92,38 +96,79 @@ func main() {
 	// pl(now.Year(), now.Month(), now.Day())
 	// pl(now.Hour(), now.Minute(), now.Second())
 
-	//math------------------------
-	pl("5 + 4 = ", 5+4)
-	pl("5 % 2 = ", 5%2)
-	x := 2
-	x++
-	pl(x)
+	// //math------------------------
+	// pl("5 + 4 = ", 5+4)
+	// pl("5 % 2 = ", 5%2)
+	// x := 2
+	// x++
+	// pl(x)
 
-	// random number
-	seedSecs := time.Now().Unix()
-	rand.Seed(seedSecs)
-	randNum := rand.Intn(50) + 1 //random number from 1-49 + 1
-	pl(randNum)
+	// // random number
+	// seedSecs := time.Now().Unix()
+	// rand.Seed(seedSecs)
+	// randNum := rand.Intn(50) + 1 //random number from 1-49 + 1
+	// pl(randNum)
 
-	//mat function
-	pl("Math Abs : ",  math.Abs(-10))
-	pl("Math Pow : ", math.Pow(2,3))
-	r90 := 90 * math.Pi / 180 // derajat
-	pl("Sin (90) : ", math.Sin(r90))
+	// //mat function
+	// pl("Math Abs : ",  math.Abs(-10))
+	// pl("Math Pow : ", math.Pow(2,3))
+	// r90 := 90 * math.Pi / 180 // derajat
+	// pl("Sin (90) : ", math.Sin(r90))
 	
-	//printf
-	/*
-		%d = integer
-		%c = character
-		%f = float
-		%t = boolean
-		%s = string
-		%o = base 8
-		%x = base 16
-	*/
-	fmt.Printf("%9f\n", 3.14)
-	fmt.Printf("%.2f\n", 3.14232)
-	fmt.Printf("%9.f\n", 3.14232) //menghapus semua desimal
-	sp1 := fmt.Sprintf("%9.f", 3.14232)
-	pl(sp1)
+	// //printf
+	// /*
+	// 	%d = integer
+	// 	%c = character
+	// 	%f = float
+	// 	%t = boolean
+	// 	%s = string
+	// 	%o = base 8
+	// 	%x = base 16
+	// */
+	// fmt.Printf("%9f\n", 3.14)
+	// fmt.Printf("%.2f\n", 3.14232)
+	// fmt.Printf("%9.f\n", 3.14232) //menghapus semua desimal
+	// sp1 := fmt.Sprintf("%9.f", 3.14232)
+	// pl(sp1)
+
+	// //for loop------------------------
+	// //for initialization; condition; postStatement {BODY}
+	// for i:= 0; i<=5; i++ {
+	// 	pl(i)
+	// }
+	// fx :=0
+	// for fx <= 5 {
+	// 	pl(fx)
+	// 	fx++
+	// }
+
+	// //mini project, tebak angka random
+	// seedSecs := time.Now().Unix()
+	// rand.Seed(seedSecs)
+	// randNum := rand.Intn(50) + 1 //random number from 1-49 + 1
+	// pl(randNum)
+	
+	// for true {
+	// fmt.Print("Tebak angkanya : ")
+	// reader := bufio.NewReader(os.Stdin)
+	// input, err := reader.ReadString('\n')
+	// if err!=nil {
+	// 	log.Fatal(err)
+	// }
+	// guess := strings.TrimSpace(input)
+	// angkaInput, err := strconv.Atoi(guess)
+	// if err!=nil {
+	// 	log.Fatal(err)
+	// }
+	// if angkaInput > randNum{
+	// 	pl("Pilih lebih kecil!")
+	// } else if angkaInput < randNum {
+	// 	pl("Pilih lebih besar")
+	// } else if angkaInput == randNum{
+	// 	pl("Selamat!!")
+	// 	break
+	// }
+	// }
+	
+	arr := []
 }
