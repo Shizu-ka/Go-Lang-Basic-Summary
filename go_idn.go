@@ -163,8 +163,10 @@ func main() {
 	// }
 	// }
 	
-	arr := []int{1,2,3}
-	for _, num := range arr {
-		pl(num)
-	}
+	// arr := []int{1,2,3}
+	// for _, num := range arr {
+	// 	pl(num)
+	// }
+
+	
 }
